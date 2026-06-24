@@ -3,143 +3,278 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sayan Sarkar | Trust & Safety Professional</title><style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 font-family:Segoe UI,sans-serif;
 }
 
 body{
-background:#0f172a;
+background:#050816;
 color:white;
-line-height:1.6;
+overflow-x:hidden;
 }
 
-.container{
-max-width:1100px;
-margin:auto;
-padding:40px 20px;
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(5,8,22,.85);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#4da3ff;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
 }
 
 .hero{
-height:100vh;
+min-height:100vh;
+padding:120px 8% 60px;
 display:flex;
-flex-direction:column;
-justify-content:center;
 align-items:center;
-text-align:center;
+justify-content:space-between;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.hero-text{
+flex:1;
+min-width:300px;
+}
+
+.badge{
+display:inline-block;
+padding:10px 18px;
+border:1px solid #4da3ff;
+border-radius:50px;
+color:#4da3ff;
+margin-bottom:20px;
 }
 
 .hero h1{
-font-size:4rem;
-margin-bottom:10px;
+font-size:70px;
+line-height:1;
+}
+
+.hero h1 span{
+color:#4da3ff;
 }
 
 .hero h2{
-font-size:1.5rem;
-color:#38bdf8;
-margin-bottom:20px;
+margin-top:15px;
+font-weight:400;
+color:#d0d0d0;
 }
 
 .hero p{
-max-width:700px;
-font-size:1.1rem;
-color:#cbd5e1;
+margin-top:25px;
+font-size:18px;
+max-width:550px;
+line-height:1.8;
+color:#c0c0c0;
+}
+
+.buttons{
+display:flex;
+gap:15px;
+margin-top:35px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 25px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+animation:pulse 2s infinite;
+}
+
+.primary{
+background:#4da3ff;
+color:white;
+}
+
+.secondary{
+border:1px solid #4da3ff;
+color:white;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+box-shadow:0 0 25px rgba(77,163,255,.5);
+}
+
+.hero-image{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.hero-image img{
+width:420px;
+max-width:100%;
+border-radius:25px;
+box-shadow:0 0 40px rgba(255,0,0,.2);
 }
 
 section{
-padding:80px 0;
+padding:90px 8%;
 }
 
 .section-title{
-font-size:2rem;
-margin-bottom:30px;
-color:#38bdf8;
+font-size:42px;
+margin-bottom:35px;
+color:#4da3ff;
+}
+
+.card-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
 .card{
-background:#1e293b;
+background:#10182c;
 padding:25px;
-border-radius:15px;
-margin-bottom:20px;
+border-radius:18px;
+transition:.3s;
 }
 
-.skills{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
+.card:hover{
+transform:translateY(-8px);
 }
 
-.skill{
-background:#38bdf8;
-color:#0f172a;
-padding:10px 15px;
-border-radius:30px;
-font-weight:bold;
+.card h3{
+margin-bottom:12px;
+}
+
+.card p{
+color:#c0c0c0;
+line-height:1.7;
 }
 
 footer{
-text-align:center;
 padding:40px;
-border-top:1px solid #334155;
-color:#94a3b8;
+text-align:center;
+border-top:1px solid #1d2a47;
+color:#8c8c8c;
 }
-</style></head><body><div class="container"><div class="hero">
-<h1>Sayan Sarkar</h1>
-<h2>Trust & Safety Professional | Quality Analyst | MBA Candidate</h2><p>
-Dedicated to building safer digital platforms through quality assurance,
-policy enforcement, operational excellence, and continuous improvement.
-</p>
-</div><section>
-<h2 class="section-title">About Me</h2><div class="card">
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.03);}
+100%{transform:scale(1);}
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:48px;
+}
+
+nav ul{
+display:none;
+}
+
+.hero{
+text-align:center;
+}
+
+.buttons{
+justify-content:center;
+}
+
+.hero p{
+margin:auto;
+margin-top:20px;
+}
+
+}
+
+</style></head><body><nav>
+<div class="logo">SS</div>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#beyond">Beyond Work</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav><section class="hero"><div class="hero-text"><div class="badge">TRUST & SAFETY PROFESSIONAL</div><h1>Sayan <span>Sarkar</span></h1><h2>Quality Analyst | MBA Candidate</h2><p>
+Building safer digital platforms through quality assurance,
+policy enforcement, stakeholder collaboration and operational excellence.
+</p><div class="buttons"><a class="btn primary"
+href="https://www.linkedin.com/in/sayansarkar19"
+target="_blank">
+Connect on LinkedIn
+</a>
+
+<a class="btn secondary"
+href="#about">
+Know More
+</a>
+
+</div></div><div class="hero-image">
+<img src="profile.jpg" alt="Sayan Sarkar">
+</div></section><section id="about"><h2 class="section-title">About Me</h2><div class="card">
 <p>
 I am a Trust & Safety professional currently working with Accenture in Mumbai.
 My experience includes content moderation quality audits, policy compliance,
-root cause analysis, stakeholder collaboration, and process improvement.Beyond my professional career, I am passionate about cinema, storytelling,
-trekking, and lifelong learning.
+root cause analysis, stakeholder collaboration and process improvement.Alongside my professional journey, I am pursuing an MBA and continuously preparing myself for global opportunities.
 
 </p>
-</div>
-</section><section>
-<h2 class="section-title">Professional Experience</h2><div class="card">
-<h3>Trust & Safety Associate</h3>
-<p>Accenture</p>
-<br>
-<ul>
-<li>Performed quality audits and compliance reviews.</li>
-<li>Conducted root cause analysis for quality deviations.</li>
-<li>Collaborated with stakeholders to improve operational performance.</li>
-<li>Supported policy implementation and process improvements.</li>
-<li>Contributed to coaching and quality enhancement initiatives.</li>
-</ul>
-</div>
-</section><section>
-<h2 class="section-title">Skills</h2><div class="skills">
-<span class="skill">Trust & Safety</span>
-<span class="skill">Quality Audits</span>
-<span class="skill">Content Moderation</span>
-<span class="skill">Root Cause Analysis</span>
-<span class="skill">Policy Enforcement</span>
-<span class="skill">Stakeholder Management</span>
-<span class="skill">Training & Coaching</span>
-<span class="skill">Process Improvement</span>
-</div></section><section>
-<h2 class="section-title">Beyond Work</h2><div class="card">
-<ul>
-<li>Cinema enthusiast and film analyst</li>
-<li>Former child actor</li>
-<li>Trekker and outdoor explorer</li>
-<li>MBA student</li>
-<li>Learning Spanish</li>
-</ul>
-</div>
-</section><section>
-<h2 class="section-title">Contact</h2><div class="card">
-<p>Email: your.email@example.com</p>
-<p>LinkedIn: linkedin.com/in/yourprofile</p>
-</div>
-</section></div><footer>
+</div></section><section id="skills"><h2 class="section-title">Areas of Expertise</h2><div class="card-grid"><div class="card">
+<h3>Trust & Safety</h3>
+<p>Platform safety, policy enforcement and risk identification.</p>
+</div><div class="card">
+<h3>Quality Assurance</h3>
+<p>Audits, reviews and quality improvement initiatives.</p>
+</div><div class="card">
+<h3>Root Cause Analysis</h3>
+<p>Identifying quality gaps and implementing solutions.</p>
+</div><div class="card">
+<h3>Stakeholder Collaboration</h3>
+<p>Working across teams to improve operational excellence.</p>
+</div></div></section><section id="beyond"><h2 class="section-title">Things I Love</h2><div class="card-grid"><div class="card">
+<h3>🎬 Cinema Enthusiast</h3>
+<p>Passionate about films, storytelling and screenwriting.</p>
+</div><div class="card">
+<h3>🎭 Former Child Actor</h3>
+<p>Worked in Bengali television and film projects during childhood.</p>
+</div><div class="card">
+<h3>🥾 Trekker</h3>
+<p>Love hiking, mountains and outdoor adventures.</p>
+</div><div class="card">
+<h3>🇪🇸 Learning Spanish</h3>
+<p>Preparing for international opportunities and cultural exploration.</p>
+</div></div></section><section id="contact"><h2 class="section-title">Let's Connect</h2><div class="buttons"><a class="btn primary"
+href="https://www.linkedin.com/in/sayansarkar19"
+target="_blank">
+LinkedIn
+</a>
+
+</div></section><footer>
 © 2026 Sayan Sarkar. All Rights Reserved.
 </footer></body>
 </html>
