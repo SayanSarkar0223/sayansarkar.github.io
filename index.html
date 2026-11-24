@@ -1,199 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#10100f">
-  <meta name="description" content="Sayan Sarkar — a creative mind with a professional background. Explore work, cinema, stories and adventures.">
-  <title>Sayan Sarkar — A Life in Many Frames</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="The personal portfolio of Sayan Sarkar — somewhere between the real and the reel.">
+  <title>Sayan Sarkar — Somewhere Between the Real & the Reel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
 </head>
 <body>
   <div class="film-grain" aria-hidden="true"></div>
-  <div class="scroll-progress" aria-hidden="true"><span id="progress"></span></div>
-
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Sayan Sarkar home">SS<span>.</span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
-      <span></span><span></span>
-    </button>
-    <nav class="main-nav" id="mainNav">
-      <a href="#about">ABOUT</a>
-      <a href="#work">WORK</a>
-      <a href="#cinema">CINEMA</a>
-      <a href="#journey">JOURNEY</a>
-      <a href="#contact" class="nav-contact">LET'S TALK <span>↗</span></a>
+    <a class="wordmark" href="#home" aria-label="Sayan Sarkar home">SS<span>.</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#story">The Story</a><a href="#work">The Work</a><a href="#performer">Performer</a>
+      <a href="#cinema">Cinema Room</a><a href="#elsewhere">Elsewhere</a><a href="#contact" class="nav-contact">Say hello ↗</a>
     </nav>
   </header>
 
-  <main id="top">
-    <section class="hero section-pad">
-      <div class="hero-meta mono">
-        <span>INDEPENDENT THINKER · CREATIVE SPIRIT</span>
-        <span>MUMBAI, INDIA <i class="live-dot"></i></span>
-      </div>
+  <main>
+    <section class="hero section-shell" id="home">
       <div class="hero-copy">
-        <p class="eyebrow reveal">A LIFE IN MANY FRAMES</p>
-        <h1 class="hero-title reveal">Not just<br>one <em>story.</em></h1>
-        <div class="hero-bottom reveal">
-          <p class="hero-intro">I'm <strong>Sayan Sarkar</strong> — a creative mind with a professional background, and a curious soul with stories to tell.</p>
-          <a class="round-link" href="#about" aria-label="Scroll to discover"><span>↓</span></a>
-        </div>
+        <p class="eyebrow"><span class="eyebrow-line"></span> A work in progress · Mumbai, India</p>
+        <h1>Somewhere between<br>the <em>real</em> and the <em>reel.</em></h1>
+        <p class="hero-intro">A curious mind, a restless imagination, and a life that refuses to fit into one frame.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#story">Step inside <span>↘</span></a><a class="text-link" href="#work">A little about my work <span>↗</span></a></div>
       </div>
-      <div class="hero-foot mono"><span>SCROLL TO EXPLORE</span><span>© <span id="year"></span> SAYAN SARKAR</span></div>
-      <div class="hero-orbit" aria-hidden="true"><span>CREATIVITY · CURIOSITY · COURAGE · </span></div>
+      <div class="hero-art" aria-label="Abstract cinematic frame artwork">
+        <div class="frame frame-back"></div><div class="frame frame-front"><div class="frame-cross"></div><span class="frame-index">FRAME Nº 001</span><span class="frame-caption">STILL BECOMING</span></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit-dot"></div>
+        <p class="art-note">Not a finished story.<br>Just a frame from it.</p>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 / 06</span></div>
     </section>
 
-    <section class="intro section-pad" id="about">
-      <div class="section-kicker mono"><span>01 / THE PERSON</span><span>BEHIND THE FRAMES</span></div>
-      <div class="intro-grid">
-        <h2 class="display-heading reveal">Different chapters.<br><em>One curious mind.</em></h2>
-        <div class="intro-text reveal">
-          <p class="lead">I've never been particularly good at fitting into just one box. And I've stopped trying.</p>
-          <p>My journey has moved between performance and professional life, storytelling and problem-solving, the familiar and the unknown. I began around cameras, found a career in the digital world, and kept making room for the things that make me curious.</p>
-          <p>This is a living collection of the work I do, the stories I love, and the places I hope to go.</p>
-          <a class="text-link" href="#journey">GET TO KNOW MY JOURNEY <span>↗</span></a>
+    <section class="section-shell story-section" id="story">
+      <div class="section-kicker">01 — THE STORY</div>
+      <div class="story-grid">
+        <h2>Not one thing.<br><em>Not just one thing.</em></h2>
+        <div class="story-copy">
+          <p class="lead">I have always found it difficult to put life into neat little boxes. Maybe that's a good thing.</p>
+          <p>I believe in fantasy, but I respect practicality. I am curious about almost everything, even while knowing that one lifetime is nowhere near enough time to learn it all.</p>
+          <p>Cinema has always been more than entertainment to me. It is a language, a feeling, a place I keep returning to. I may be doing a white-collar job right now, but somewhere in my heart, the destination is still a film set.</p>
+          <p class="signature">Still figuring it out. Happily.</p>
         </div>
       </div>
-      <div class="trait-row">
-        <span>STORYTELLER</span><b>✳</b><span>PROBLEM-SOLVER</span><b>✳</b><span>CINEPHILE</span><b>✳</b><span>EXPLORER</span>
-      </div>
+      <div class="trait-strip"><span>LOYAL</span><i>✳</i><span>CURIOUS</span><i>✳</i><span>OLD-SCHOOL</span><i>✳</i><span>STUBBORN</span><i>✳</i><span>OPTIMISTIC</span></div>
     </section>
 
-    <section class="work section-pad" id="work">
-      <div class="section-kicker mono"><span>02 / THE PROFESSIONAL</span><span>THOUGHTFUL WORK. REAL IMPACT.</span></div>
-      <div class="section-heading-row">
-        <h2 class="display-heading reveal">Making the<br><em>digital world safer.</em></h2>
-        <p class="section-aside reveal">I work at the intersection of people, policy and technology — bringing curiosity, consistency and a quality-first mindset to complex problems.</p>
-      </div>
-      <div class="work-card">
-        <div class="work-card-top mono"><span>EXPERIENCE / TRUST & SAFETY</span><span>01 — 04</span></div>
-        <h3>Trust &amp; Safety</h3>
-        <p class="work-summary">Supporting safer digital experiences through content review, policy application, quality thinking and operational collaboration.</p>
-        <div class="capability-grid">
-          <article><span class="cap-number">01</span><h4>Policy &amp; Enforcement</h4><p>Applying platform policies with care, consistency and contextual judgement.</p></article>
-          <article><span class="cap-number">02</span><h4>Quality &amp; Audits</h4><p>Reviewing decisions, spotting patterns and strengthening quality standards.</p></article>
-          <article><span class="cap-number">03</span><h4>Root Cause Analysis</h4><p>Looking beyond individual errors to understand recurring gaps and opportunities.</p></article>
-          <article><span class="cap-number">04</span><h4>People &amp; Collaboration</h4><p>Sharing knowledge, supporting colleagues and working across stakeholders.</p></article>
+    <section class="work-section" id="work">
+      <div class="section-shell">
+        <div class="section-kicker">02 — THE PRACTICAL SIDE</div>
+        <div class="section-heading"><h2>Work, with a<br><em>human side.</em></h2><p>There is a practical side to every dream. Here's the part of my story that lives in the everyday world.</p></div>
+        <div class="work-card">
+          <div class="work-card-top"><span class="work-symbol">↗</span><span class="work-label">PROFESSIONAL SNAPSHOT</span></div>
+          <h3>Trust, safety &amp; people.</h3>
+          <p>My professional experience has involved working in trust and safety operations, navigating policy, quality, and the human context behind decisions.</p>
+          <div class="work-tags"><span>Quality &amp; audits</span><span>Root-cause analysis</span><span>Policy enforcement</span><span>Training &amp; collaboration</span></div>
+          <p class="small-note">This is a high-level introduction. Add confirmed roles, employers, dates, and measurable achievements before using this as a formal CV.</p>
+          <a class="text-link" href="mailto:sayansarkar60@gmail.com?subject=Professional%20profile">Request my detailed profile <span>↗</span></a>
         </div>
-        <p class="disclaimer">Experience summary is intentionally high-level. No confidential client, platform or operational information is shared.</p>
-      </div>
-      <div class="professional-note">
-        <span class="gold-mark">✳</span>
-        <p>Interested in roles where <em>clear thinking, empathy and continuous improvement</em> make a difference.</p>
       </div>
     </section>
 
-    <section class="creative section-pad" id="cinema">
-      <div class="section-kicker mono"><span>03 / THE CREATIVE</span><span>THE CINEMA ROOM</span></div>
-      <div class="creative-header">
-        <h2 class="display-heading reveal">Some stories<br>stay with <em>you.</em></h2>
-        <p class="section-aside reveal">Cinema was one of my earliest worlds. It remains one of my favourite ways to understand people, emotion and the art of telling a story.</p>
-      </div>
-      <div class="film-feature">
-        <div class="film-frame">
-          <div class="film-frame-inner">
-            <span class="frame-label mono">A NOTE FROM THE VIEWER</span>
-            <span class="film-reel" aria-hidden="true">✳</span>
-            <p class="film-quote">“A great scene doesn't just show you something. It makes you <em>feel</em> something.”</p>
-            <span class="frame-credit mono">SAYAN'S CINEMA NOTES</span>
-          </div>
-        </div>
-        <div class="film-details">
-          <p class="eyebrow">BEYOND WATCHING</p>
-          <h3>A lifelong<br><em>conversation</em><br>with cinema.</h3>
-          <p>From the energy of a hero's introduction to the smallest visual metaphor, I love looking at how films communicate — through performance, framing, sound, editing and silence.</p>
-          <div class="film-tags"><span>FILM ANALYSIS</span><span>ACTING</span><span>STORYTELLING</span><span>INDIAN CINEMA</span></div>
-          <button class="outline-button" id="filmButton">OPEN MY FILM NOTES <span>↗</span></button>
+    <section class="section-shell performer-section" id="performer">
+      <div class="section-kicker">03 — THE PERFORMER</div>
+      <div class="performer-grid">
+        <div class="performer-art"><div class="spotlight"></div><div class="stage-line"></div><span class="stage-note">THE SHOW<br>GOES ON</span><span class="stage-number">02:17</span></div>
+        <div class="performer-copy"><h2>Before the<br><em>day job,</em><br>there was a stage.</h2>
+          <p class="lead">I began in front of a camera as a child, working mostly in the Bengali film and television world, along with European projects.</p>
+          <p>I don't have a neat archive of footage to show for those early years. But the experience is part of me all the same — an early introduction to sets, stories, and the strange magic of performance.</p>
+          <p class="small-note">More credits and details will be added when I have the verified titles, roles, and production information together.</p>
         </div>
       </div>
-      <div class="film-note-panel" id="filmPanel" hidden>
-        <div class="panel-heading"><span class="mono">A FEW FILMS THAT STAY WITH ME</span><button id="closeFilm" aria-label="Close film notes">×</button></div>
+    </section>
+
+    <section class="cinema-section" id="cinema">
+      <div class="section-shell">
+        <div class="section-kicker">04 — THE CINEMA ROOM</div>
+        <div class="section-heading"><h2>My kind of<br><em>religion.</em></h2><p>Stories that stayed. Scores that still make the world feel a little bigger. A small room for a very large obsession.</p></div>
+        <div class="cinema-subhead"><h3>Five films I carry with me</h3><span>THE PERSONAL CANON · NOT A RANKING</span></div>
         <div class="film-list">
-          <div><span>01</span><strong>Spider-Man 2</strong><small>Responsibility, sacrifice &amp; humanity</small></div>
-          <div><span>02</span><strong>Gangs of Wasseypur</strong><small>World-building &amp; generational storytelling</small></div>
-          <div><span>03</span><strong>Tumbbad</strong><small>Atmosphere, folklore &amp; visual storytelling</small></div>
-          <div><span>04</span><strong>Into the Spider-Verse</strong><small>Animation as pure visual expression</small></div>
-          <div><span>05</span><strong>Jawan</strong><small>Iconography, spectacle &amp; cinematic entrances</small></div>
+          <div class="film-row"><span class="film-no">01</span><span class="film-title">Life Is Beautiful</span><span class="film-year">LA VITA È BELLA</span></div>
+          <div class="film-row"><span class="film-no">02</span><span class="film-title">Swades</span><span class="film-year">ASHUTOSH GOWARIKER</span></div>
+          <div class="film-row"><span class="film-no">03</span><span class="film-title">Capernaum</span><span class="film-year">NADINE LABAKI</span></div>
+          <div class="film-row"><span class="film-no">04</span><span class="film-title">Cinema Paradiso</span><span class="film-year">NUOVO CINEMA PARADISO</span></div>
+          <div class="film-row"><span class="film-no">05</span><span class="film-title">Interstellar</span><span class="film-year">CHRISTOPHER NOLAN</span></div>
         </div>
-        <p class="disclaimer">A personal selection — not a definitive ranking. Film notes and reviews can be added here over time.</p>
-      </div>
-    </section>
-
-    <section class="journey section-pad" id="journey">
-      <div class="section-kicker mono"><span>04 / THE JOURNEY</span><span>STILL IN THE MAKING</span></div>
-      <h2 class="display-heading reveal">Life, in <em>chapters.</em></h2>
-      <p class="journey-intro">Every chapter has taught me something different. The next one is still being written.</p>
-      <div class="timeline">
-        <article class="timeline-item">
-          <span class="timeline-index mono">CHAPTER 01</span><div class="timeline-marker"></div>
-          <div><h3>The First Take</h3><p>Early experiences as a child actor, working across Bengali television, films and international projects. An introduction to performance, collaboration and life around a camera.</p><span class="timeline-tag">ACTING · PERFORMANCE</span></div>
-        </article>
-        <article class="timeline-item">
-          <span class="timeline-index mono">CHAPTER 02</span><div class="timeline-marker"></div>
-          <div><h3>Behind the Screen</h3><p>A growing fascination with cinema, film language, pop culture and the craft of storytelling — learning to look at stories as both an audience member and a creative thinker.</p><span class="timeline-tag">CINEMA · STORYTELLING</span></div>
-        </article>
-        <article class="timeline-item">
-          <span class="timeline-index mono">CHAPTER 03</span><div class="timeline-marker"></div>
-          <div><h3>The Professional Chapter</h3><p>Building experience in Trust &amp; Safety, content moderation, policy enforcement and quality-focused operations in the technology industry.</p><span class="timeline-tag">TRUST &amp; SAFETY · QUALITY</span></div>
-        </article>
-        <article class="timeline-item">
-          <span class="timeline-index mono">CHAPTER 04</span><div class="timeline-marker"></div>
-          <div><h3>Learning Without Borders</h3><p>Continuing my education through an MBA journey, exploring languages and staying open to international opportunities.</p><span class="timeline-tag">LEARNING · LANGUAGES</span></div>
-        </article>
-        <article class="timeline-item">
-          <span class="timeline-index mono">CHAPTER 05</span><div class="timeline-marker"></div>
-          <div><h3>The Road Less Travelled</h3><p>Finding perspective outdoors through walking, running and trekking — with the Pacific Crest Trail living somewhere on the horizon.</p><span class="timeline-tag">OUTDOORS · EXPLORATION</span></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="beyond section-pad">
-      <div class="section-kicker mono"><span>05 / OUTSIDE THE FRAME</span><span>THE EXPLORER</span></div>
-      <div class="beyond-grid">
-        <div><h2 class="display-heading reveal">Curiosity<br>has <em>no map.</em></h2><p class="beyond-copy">Long walks. Weekend runs. Trails that lead somewhere unexpected. I like the kind of experiences that remind you how much there is still to discover.</p></div>
-        <div class="trail-card">
-          <span class="mono">A DREAM ON THE HORIZON</span>
-          <div class="trail-art" aria-hidden="true"><div class="mountain mountain-back"></div><div class="mountain mountain-front"></div><div class="trail-sun"></div></div>
-          <h3>Pacific Crest Trail</h3>
-          <p>One day. One long trail. A whole lot of wilderness.</p>
-          <span class="trail-status mono">BUCKET LIST / IN PROGRESS</span>
+        <div class="music-heading"><div><span class="eyebrow">THE SOUNDTRACKS</span><h3>Sometimes the music<br>is the whole movie.</h3></div><p>I tend to fall in love with film scores — the kind that make a scene live long after the screen goes dark. Press play when you're ready.</p></div>
+        <div class="score-grid">
+          <article class="score-card"><div class="score-meta"><span>01 / TIME</span><span>INCEPTION</span></div><h4>Time</h4><p>Hans Zimmer · Inception</p><iframe src="https://www.youtube.com/embed/c56t7upa8Bk" title="Time — Hans Zimmer, Inception" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></article>
+          <article class="score-card"><div class="score-meta"><span>02 / BROTHERS IN ARMS</span><span>MAD MAX: FURY ROAD</span></div><h4>Brothers in Arms</h4><p>Junkie XL · Mad Max: Fury Road</p><iframe src="https://www.youtube.com/embed/akggf50-mRI" title="Brothers in Arms — Junkie XL, Mad Max Fury Road" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></article>
+          <article class="score-card"><div class="score-meta"><span>03 / FLIGHT</span><span>MAN OF STEEL</span></div><h4>Flight</h4><p>Hans Zimmer · Man of Steel</p><iframe src="https://www.youtube.com/embed/w4OdIOGBW2Q" title="Flight — Hans Zimmer, Man of Steel" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></article>
+          <article class="score-card"><div class="score-meta"><span>04 / INSTRUMENTAL THEME</span><span>CHENNAI EXPRESS</span></div><h4>Instrumental Theme</h4><p>Amar Mohile · Chennai Express</p><iframe src="https://www.youtube.com/embed/S6KtEqxGQbw" title="Chennai Express Instrumental Theme — Amar Mohile" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></article>
+          <article class="score-card"><div class="score-meta"><span>05 / THE ECSTASY OF GOLD</span><span>THE GOOD, THE BAD AND THE UGLY</span></div><h4>The Ecstasy of Gold</h4><p>Ennio Morricone · The Good, the Bad and the Ugly</p><iframe src="https://www.youtube.com/embed/PYI09PMNazw" title="The Ecstasy of Gold — Ennio Morricone" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></article>
         </div>
+        <p class="small-note cinema-note">Film titles are presented as a personal watchlist; official theatrical artwork can be added when suitable image assets are available.</p>
       </div>
     </section>
 
-    <section class="contact section-pad" id="contact">
-      <div class="section-kicker mono"><span>06 / THE NEXT CHAPTER</span><span>CONTACT</span></div>
-      <p class="eyebrow">HAVE A STORY, IDEA OR OPPORTUNITY?</p>
-      <h2 class="contact-title reveal">Let's make<br>something <em>matter.</em></h2>
-      <p class="contact-copy">I'm always glad to connect with thoughtful people, creative collaborators and teams doing meaningful work.</p>
-      <a class="contact-email" href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com <span>↗</span></a>
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
-        <a href="https://github.com/sayansarkar0223" target="_blank" rel="noreferrer">GITHUB ↗</a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">INSTAGRAM ↗</a>
+    <section class="section-shell elsewhere-section" id="elsewhere">
+      <div class="section-kicker">05 — ELSEWHERE</div>
+      <div class="section-heading"><h2>Out of office.<br><em>Into the world.</em></h2><p>Somewhere between a trail, a new skill, a long conversation, and a city I haven't reached yet.</p></div>
+      <div class="elsewhere-grid">
+        <article class="elsewhere-card trek-card"><span class="card-index">A / THE OUTDOORS</span><div class="mountain-art"><span></span><span></span><span></span></div><h3>Take the long way.</h3><p>Walking, running, trekking — I like the kind of journeys that ask you to keep going one step at a time.</p></article>
+        <article class="elsewhere-card learn-card"><span class="card-index">B / THE CURIOUS MIND</span><div class="orbit-art">∞</div><h3>Always a beginner.</h3><p>There are too many things to learn and too little time. I intend to make a dent in that list anyway.</p></article>
+        <article class="elsewhere-card people-card"><span class="card-index">C / THE INNER CIRCLE</span><div class="people-art"><span>✳</span><span>✳</span><span>✳</span></div><h3>Keep your people close.</h3><p>Three close friends, countless conversations, and the quiet joy of having your people around.</p></article>
       </div>
+      <div class="edinburgh">
+        <div class="edinburgh-copy"><span class="eyebrow">THE PLACE AT THE END OF THE MAP</span><h2>Edinburgh.<br><em>One day.</em></h2><p>Cobblestone streets. Old architecture. A medieval atmosphere. A culture I want to get lost in — and, yes, a little Scottish whisky in the picture.</p><p>Maybe it doesn't fit the most practical version of my plans. That's probably why it belongs here.</p></div>
+        <div class="edinburgh-art"><div class="castle-silhouette"><span></span><span></span><span></span><span></span><span></span></div><div class="edinburgh-moon"></div><span class="edinburgh-caption">A CITY I KEEP<br>COMING BACK TO</span></div>
+      </div>
+      <div class="future-note"><span class="eyebrow">FIVE YEARS FROM NOW</span><p>Freedom. The freedom to do almost anything — and to share that joy, generously, with the people I love.</p></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-shell contact-inner"><div class="section-kicker">06 — THE NEXT SCENE</div><p class="eyebrow">Every good story leaves room for another character.</p><h2>Have a story<br>to <em>share?</em></h2><p class="contact-intro">For work, films, creative collaborations, conversations, or simply to say hello.</p><a class="email-link" href="mailto:sayansarkar60@gmail.com">sayansarkar60@gmail.com <span>↗</span></a><a class="linkedin-link" href="https://www.linkedin.com/in/sayansarkar19/" target="_blank" rel="noopener noreferrer">Find me on LinkedIn ↗</a></div>
     </section>
   </main>
-
-  <footer class="site-footer mono">
-    <a class="brand" href="#top">SS<span>.</span></a>
-    <span>MADE WITH CURIOSITY &amp; A LITTLE CINEMA MAGIC.</span>
-    <a href="#top">BACK TO TOP ↑</a>
-  </footer>
-
-  <button class="terminal-trigger mono" id="terminalTrigger" aria-label="Open hidden terminal">⌘</button>
-  <div class="terminal-overlay" id="terminalOverlay" hidden>
-    <div class="terminal-window">
-      <div class="terminal-top"><span> SAYAN.SARKAR — QUICK ACCESS</span><button id="closeTerminal" aria-label="Close terminal">×</button></div>
-      <p class="terminal-hint">Type <b>help</b> to see available commands.</p>
-      <div class="terminal-output" id="terminalOutput" aria-live="polite"></div>
-      <form id="terminalForm"><label for="terminalInput">visitor@portfolio:~$</label><input id="terminalInput" autocomplete="off" spellcheck="false" aria-label="Terminal command"></form>
-    </div>
-  </div>
+  <footer class="site-footer"><a class="wordmark" href="#home">SS<span>.</span></a><span>MADE OF STORIES, STILL IN THE MAKING.</span><span>© <span id="year"></span> SAYAN SARKAR</span></footer>
+  <script src="script.js"></script>
 </body>
 </html>
